@@ -1,0 +1,17 @@
+[
+    {
+        "query": "什么是 Transformer？",
+        "expected_docs": ["Transformer 模型", "Attention机制"],
+        "category": "concept"
+    },
+    {
+        "query": "Transformer 和 RNN 有什么区别？",
+        "expected_docs": ["Transformer vs RNN", "序列建模比较"],
+        "category": "comparison"
+    },
+    {
+        "query": "人工智能最新的发展趋势是什么？",
+        "expected_docs": ["AI 趋势 2024", "大模型发展"],
+        "category": "trend"
+    }
+]

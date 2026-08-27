@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# 虚拟环境
+venv/
+env/
+ENV/
+.venv
+d2l_env/
+
+# 环境变量（包含 API Key！）
+.env
+
+# 项目数据文件（体积大且可自动生成）
+checkpoints.db
+checkpoints.db-shm
+checkpoints.db-wal
+qdrant_storage/
+outputs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

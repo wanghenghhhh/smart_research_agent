@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  agent-api:
+    build: .
+    container_name: smart_research_agent
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./qdrant_storage:/app/qdrant_storage
+      - ./checkpoints.db:/app/checkpoints.db
+      - ./outputs:/app/outputs
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_BASE_URL=${OPENAI_BASE_URL}
+      - OPENAI_MODEL=${OPENAI_MODEL}
+      - TAVILY_API_KEY=${TAVILY_API_KEY}
+    restart: unless-stopped
